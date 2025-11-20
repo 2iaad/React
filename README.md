@@ -9,6 +9,7 @@
 
 
 # When we create a Vite + React project, the directory structure looks like this:
+
 my-react/          ← your project root
 ├─ node_modules/   ← installed dependencies
 ├─ public/         ← static assets like favicon, vite.svg
@@ -22,6 +23,7 @@ my-react/          ← your project root
 └─ vite.config.js  ← Vite config file
 
 # Difference between live server & Vite server:
+
 | Feature                      | Live Server | Vite Dev Server |
 | ------------------------------------------------------------ |
 | Serves static files           | ✅          | ✅               |
