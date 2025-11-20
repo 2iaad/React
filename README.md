@@ -31,3 +31,18 @@ my-react/          ← your project root
 | npm package imports          | ❌          | ✅               |
 | Hot Module Replacement (HMR) | ❌          | ✅               | => Updates only the changed components not the intire page.
 ----------------------------------------------------------------
+
+# Difference between a Library and a Framework
+
+Library is just a collection of functions, tools, or modules that you can call without recoding them, React is technically a library, because you import and use the pieces you need from the library.
+
+
+Framework is like a predefined skeleton for an application (Template / Structure), It tells  where to put folders, files, routing, components, etc.
+Example:
+    pages/
+        |__ index.jsx
+        |__ about.jsx
+    components/
+        |__ Header.jsx
+        |__ Footer.jsx
+-> You fill in the “logic and content” inside the structure/framework & theframework calls your code at the right time.
