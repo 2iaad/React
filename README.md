@@ -1,3 +1,22 @@
+# What is React?
+
+React is a JavaScript library used to build user interfaces (UI) — web pages made of small reusable parts called components.
+React is all about "UI = components + state".
+
+# What is a Component?
+
+A component is simply:
+➡️ A function that returns JSX (HTML-like code).
+➡️ It represents one part of your UI.
+Examples of components: A button, A navigation bar.
+
+# What is State
+
+its what makes components alive, React components can have state, which is data that can change.
+When state changes → React re-renders the component without refreshing the intire webpage.
+
+---
+
 # Creating a React app using Vite (step-by-step)
 `npm create vite@latest my-react --template react`
 
@@ -34,7 +53,7 @@ my-react/          ← your project root
 
 # Difference between a Library and a Framework
 
-Library is just a collection of functions, tools, or modules that you can call without recoding them, React is technically a library, because you import and use the pieces you need from the library.
+Library is just a collection of predefined functions, tools, or modules that you can call without recoding them, React is technically a library, because you import and use the pieces you need from the library.
 
 
 Framework is like a predefined skeleton for an application (Template / Structure), It tells  where to put folders, files, routing, components, etc.
