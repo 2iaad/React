@@ -1,7 +1,9 @@
 # What is React?
 
-React is a JavaScript library used to build user interfaces (UI) — web pages made of small reusable parts called components.
-React is all about "UI = components + state".
+**React is a JavaScript library that supports composability, which means you can create small, reusable pieces of code called components and combine them to build large, scalable, and maintainable web applications.**
+- Each component can manage its own state and UI logic.
+- Components can be nested, meaning small components can be combined into bigger ones.
+- This approach makes your code modular, reusable, and easier to maintain.
 
 # What is a Component?
 
@@ -9,14 +11,44 @@ A component is simply:
 ➡️ A function that returns JSX (HTML-like code).
 ➡️ It represents one part of your UI.
 Examples of components: A button, A navigation bar.
-
-# What is State
+    -> React components must start with a capital letter.
+# What is State?
 
 its what makes components alive, React components can have state, which is data that can change.
 When state changes → React re-renders the component without refreshing the intire webpage.
 
+# What do we mean by *composable*?
+
+In React, “composable” basically means something can be built by combining smaller pieces (components) together.
+-   You can build large apps from small, testable, and reusable components.
+-   Makes your code cleaner, easier to maintain, and scalable.
+
 ---
 
+# Difference between vanilla JS and React
+
+-> *vanilla JS (imperative)* -> you explicitly instruct how to find the element, what to change, and how.
+```const root = document.getElementById("root");
+
+const element = document.createElement("h1");
+element.innerText = "Created using Vanilla JS";
+element.className = "header";
+
+root.appendChild(element);
+```
+
+-> *React (Declarative)* -> You tell the computer what you want, and it figures out how to do it.
+```import { createRoot } from "react-dom/client";
+
+createRoot(document.getElementById("root")).render(
+  <h1 className="header">Created using React</h1>
+);
+```
+
+- Vanilla JS: You manually create and update DOM elements.
+- React: You describe the UI with JSX, and React updates the DOM for you.
+
+---
 # Creating a React app using Vite (step-by-step)
 `npm create vite@latest my-react --template react`
 
