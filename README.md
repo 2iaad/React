@@ -112,3 +112,28 @@ Example:
             │
             └── Footer
                  └── (footer elements here)```
+
+
+# ✅ React fundamentals i have learned:
+
+✔ Project setup: Setting up React projects using Vite efficiently.
+
+✔ Root rendering: Rendering components into the DOM root element.
+
+✔ Components: Building reusable UI pieces as functional components.
+
+✔ JSX: Writing HTML-like JavaScript syntax for component structures.
+
+✔ Fragments: Grouping elements without adding extra DOM nodes.
+
+✔ Composability: Combining small components to create larger interfaces.
+
+✔ Declarative UI: Describing desired UI results instead of steps.
+
+✔ Basic styling: Applying CSS rules directly to React components.
+
+✔ Asset importing: Importing images or files for React component usage.
+
+✔ Project structure: Organizing files inside clean, scalable project architecture.
+
+✔ Footer layout & page layout: Using flexbox to position footer at bottom.
