@@ -8,7 +8,7 @@
 # What is a Component?
 
 A component is simply:
-➡️ A function that returns JSX (HTML-like code).
+➡️ A function that returns a React elements (HTML-like code).
 ➡️ It represents one part of your UI.
 Examples of components: A button, A navigation bar.
     -> React components must start with a capital letter.
@@ -61,7 +61,7 @@ createRoot(document.getElementById("root")).render(
 
 # When we create a Vite + React project, the directory structure looks like this:
 
-my-react/          ← your project root
+```my-react/          ← your project root
 ├─ node_modules/   ← installed dependencies
 ├─ public/         ← static assets like favicon, vite.svg
 ├─ src/            ← your source code (React components live here)
@@ -72,16 +72,16 @@ my-react/          ← your project root
 ├─ index.html      ← HTML template
 ├─ package.json
 └─ vite.config.js  ← Vite config file
-
+```
 # Difference between live server & Vite server:
 
-| Feature                      | Live Server | Vite Dev Server |
+```| Feature                      | Live Server | Vite Dev Server |
 | ------------------------------------------------------------ |
 | Serves static files           | ✅          | ✅               |
 | JSX transpilation            | ❌          | ✅               | => convert code to JavaScript that browsers understand.
 | npm package imports          | ❌          | ✅               |
 | Hot Module Replacement (HMR) | ❌          | ✅               | => Updates only the changed components not the intire page.
-----------------------------------------------------------------
+----------------------------------------------------------------```
 
 # Difference between a Library and a Framework
 
@@ -90,10 +90,25 @@ Library is just a collection of predefined functions, tools, or modules that you
 
 Framework is like a predefined skeleton for an application (Template / Structure), It tells  where to put folders, files, routing, components, etc.
 Example:
-    pages/
+```    pages/
         |__ index.jsx
         |__ about.jsx
     components/
         |__ Header.jsx
-        |__ Footer.jsx
+        |__ Footer.jsx```
 -> You fill in the “logic and content” inside the structure/framework & theframework calls your code at the right time.
+
+# Full Tree With DOM + Components
+
+```html
+└── body
+    └── div#root
+        └── App (React Fragment)
+            ├── Header
+            │    └── (whatever elements you put inside)
+            │
+            ├── MainContent
+            │    └── (content elements here)
+            │
+            └── Footer
+                 └── (footer elements here)```

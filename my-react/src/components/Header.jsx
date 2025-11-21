@@ -1,4 +1,4 @@
-import zbi from './assets/react.svg'
+import zbi from '../assets/react.svg'
 
 function Header()
 {
