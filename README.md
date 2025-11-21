@@ -81,7 +81,8 @@ createRoot(document.getElementById("root")).render(
 | JSX transpilation            | ❌          | ✅               | => convert code to JavaScript that browsers understand.
 | npm package imports          | ❌          | ✅               |
 | Hot Module Replacement (HMR) | ❌          | ✅               | => Updates only the changed components not the intire page.
-----------------------------------------------------------------```
+----------------------------------------------------------------
+```
 
 # Difference between a Library and a Framework
 
@@ -90,17 +91,20 @@ Library is just a collection of predefined functions, tools, or modules that you
 
 Framework is like a predefined skeleton for an application (Template / Structure), It tells  where to put folders, files, routing, components, etc.
 Example:
-```    pages/
+```
+    pages/
         |__ index.jsx
         |__ about.jsx
     components/
         |__ Header.jsx
-        |__ Footer.jsx```
+        |__ Footer.jsx
+```
 -> You fill in the “logic and content” inside the structure/framework & theframework calls your code at the right time.
 
 # Full Tree With DOM + Components
 
-```html
+```
+html
 └── body
     └── div#root
         └── App (React Fragment)
@@ -111,7 +115,8 @@ Example:
             │    └── (content elements here)
             │
             └── Footer
-                 └── (footer elements here)```
+                 └── (footer elements here)
+```
 
 
 # ✅ React fundamentals i have learned:
