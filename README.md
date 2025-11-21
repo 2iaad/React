@@ -61,7 +61,8 @@ createRoot(document.getElementById("root")).render(
 
 # When we create a Vite + React project, the directory structure looks like this:
 
-```my-react/          ← your project root
+```
+my-react/          ← your project root
 ├─ node_modules/   ← installed dependencies
 ├─ public/         ← static assets like favicon, vite.svg
 ├─ src/            ← your source code (React components live here)
