@@ -28,7 +28,8 @@ In React, “composable” basically means something can be built by combining s
 # Difference between vanilla JS and React
 
 -> *vanilla JS (imperative)* -> you explicitly instruct how to find the element, what to change, and how.
-```const root = document.getElementById("root");
+```
+const root = document.getElementById("root");
 
 const element = document.createElement("h1");
 element.innerText = "Created using Vanilla JS";
@@ -38,7 +39,8 @@ root.appendChild(element);
 ```
 
 -> *React (Declarative)* -> You tell the computer what you want, and it figures out how to do it.
-```import { createRoot } from "react-dom/client";
+```
+import { createRoot } from "react-dom/client";
 
 createRoot(document.getElementById("root")).render(
   <h1 className="header">Created using React</h1>
@@ -76,7 +78,8 @@ my-react/          ← your project root
 ```
 # Difference between live server & Vite server:
 
-```| Feature                      | Live Server | Vite Dev Server |
+```
+| Feature                      | Live Server | Vite Dev Server |
 | ------------------------------------------------------------ |
 | Serves static files           | ✅          | ✅               |
 | JSX transpilation            | ❌          | ✅               | => convert code to JavaScript that browsers understand.
