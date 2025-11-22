@@ -9,18 +9,25 @@
 
 A component is simply:
 ➡️ A function that returns a React elements (HTML-like code).
+
 ➡️ It represents one part of your UI.
+
 Examples of components: A button, A navigation bar.
-    -> React components must start with a capital letter.
+
+➡️ React components must start with a capital letter.
 # What is State?
 
-its what makes components alive, React components can have state, which is data that can change.
-When state changes → React re-renders the component without refreshing the intire webpage.
+➡️ Its what makes components alive, React components can have state, which is data that can change.
+When state changes 
+
+➡️ React re-renders the component without refreshing the intire webpage.
 
 # What do we mean by *composable*?
 
 In React, “composable” basically means something can be built by combining smaller pieces (components) together.
+
 -   You can build large apps from small, testable, and reusable components.
+
 -   Makes your code cleaner, easier to maintain, and scalable.
 
 ---
@@ -47,22 +54,23 @@ createRoot(document.getElementById("root")).render(
 );
 ```
 
-- Vanilla JS: You manually create and update DOM elements.
-- React: You describe the UI with JSX, and React updates the DOM for you.
+➡️ Vanilla JS: You manually create and update DOM elements.
+
+➡️ React: You describe the UI with JSX, and React updates the DOM for you.
 
 ---
 # Creating a React app using Vite (step-by-step)
-`npm create vite@latest my-react --template react`
+```npm create vite@latest my-react --template react```
 
--> npm:                 node package manager - it runs commands and installs packages.
+-> `npm`:                 node package manager - it runs commands and installs packages.
 
--> create:              create project.
+-> `create`:              create project.
 
--> vite@latest:         use Vite project generator +  use the latest version.
+-> `vite@latest`:         use Vite project generator +  use the latest version.
 
--> my-react:            name of the project folder that Vite will create.
+-> `my-react`:            name of the project folder that Vite will create.
 
--> --template react:    Vite supports many frameworks: vanilla JS, Vue, React, Svelte, Lit, Preact. this flag tells Vite to create a project using the React template.
+-> `--template react`:    Vite supports many frameworks: vanilla JS, Vue, React, Svelte, Lit, Preact. this flag tells Vite to create a project using the React template.
 
 
 
@@ -128,7 +136,7 @@ html
 ```
 
 
-# ✅ React fundamentals i have learned:
+# React fundamentals i have learned:
 
 ✔ Project setup: Setting up React projects using Vite efficiently.
 
