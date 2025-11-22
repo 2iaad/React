@@ -55,10 +55,15 @@ createRoot(document.getElementById("root")).render(
 `npm create vite@latest my-react --template react`
 
 -> npm:                 node package manager - it runs commands and installs packages.
+
 -> create:              create project.
+
 -> vite@latest:         use Vite project generator +  use the latest version.
+
 -> my-react:            name of the project folder that Vite will create.
+
 -> --template react:    Vite supports many frameworks: vanilla JS, Vue, React, Svelte, Lit, Preact. this flag tells Vite to create a project using the React template.
+
 
 
 # When we create a Vite + React project, the directory structure looks like this:
