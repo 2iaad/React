@@ -3,6 +3,15 @@
 Simple React travel journal/diary app, showing multiple travel destinations with images and details, in a card-like layout.
 ![Travel Journal Screenshot](public/Screenshot%202025-11-24%20at%2013.25.46.png)
 
+## New things learned
+
+### - data-driven react
+*data-driven* app is when the UI is generated from data instead of being hardcoded.
+
+- You store data in arrays, objects, or from an API.
+- You map over that data to render components dynamically.
+- When the data changes, the UI updates automatically.
+
 ## Features
 - Display multiple travel entries in a card-like layout
 - Each entry includes:
