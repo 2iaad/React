@@ -5,12 +5,27 @@ Simple React travel journal/diary app, showing multiple travel destinations with
 
 ## New things learned
 
-### - data-driven react
-*data-driven* app is when the UI is generated from data instead of being hardcoded.
+- ### Modules
+    **Module** is a file that export its own code.
+    Why use modules?
+        - Organize code better (separate files for separate responsibilities).
+        - Reuse code easily.
+    There are two main ways to export:
+        - Named export -> Must import using the same names.
+            `export const pi = 3.14;` -> `import { pi, square } from './math.js';`
+        - Default Export -> Importers can give it any name.
+            `export default function greet() { console.log("Hello!"); }` ->
+            ```
+            import randomName from './greet.js';
+            randomName(); // Hello!
+            ```
 
-- You store data in arrays, objects, or from an API.
-- You map over that data to render components dynamically.
-- When the data changes, the UI updates automatically.
+- ### Data-driven
+    **Data-driven** app is when the UI is generated from data instead of being hardcoded.
+
+    - You store data in arrays, objects, or from an API.
+    - You map over that data to render components dynamically.
+    - When the data changes, the UI updates automatically -> makes code more maintainable
 
 ## Features
 - Display multiple travel entries in a card-like layout
