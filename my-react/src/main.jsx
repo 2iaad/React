@@ -1,7 +1,22 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import './main.css'
 
-createRoot(document.getElementById('root')).render(
-  <h1>salam</h1>
+import Header from './components/Header'
+import Main from './components/Main'
+
+import { createRoot } from 'react-dom/client'
+
+const root = createRoot(document.getElementById("root"));
+
+function App()
+{
+    return (
+        <>
+            <Header/>
+            <Main/>
+        </>
+    )
+}
+
+root.render(
+    <App/>
 )
