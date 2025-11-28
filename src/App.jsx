@@ -1,17 +1,16 @@
-import './components/Card.css'
-import './main.css'
-
+import Data from './components/data'
 import Header from './components/Header'
 import Card from './components/Card'
-import data from './components/data.js'
+import './App.css'
 
-import { createRoot } from 'react-dom/client'
+/*
+    Card() = “When you show ONE card, show it like this.”
+    Data.map() = “Create one <Card /> for every element in the Data array + pass the appriopriate props"
+*/
 
-const root = createRoot(document.getElementById("root"));
-
-function App()
+export default function App()
 {
-    const cards = data.map(element => {
+    const cards = Data.map(element => { // For each element in Data, we create <Card/> component.
         return (
             <Card
                 key={element.id}
@@ -34,7 +33,3 @@ function App()
         </>
     )
 }
-
-root.render(
-    <App/>
-)

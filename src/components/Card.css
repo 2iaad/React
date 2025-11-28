@@ -2,9 +2,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    
     margin: 40px;
-
 }
 
 .image {
@@ -19,7 +17,6 @@
 }
 
 .infos p {
-    /* font-size: 0.9rem; */
     font-weight: 250;
 }
 
