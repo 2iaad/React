@@ -1,0 +1,10 @@
+#out-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    height: 95vh;
+    
+    flex-wrap: wrap;
+    /* wrap: so the line appear in its own place */
+}
