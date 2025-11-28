@@ -1,6 +1,6 @@
 import Marker from './../assets/marker.png'
 
-export default function Card(props)
+export default function Card(props) // This defines HOW one travel card should look on the screen.
 {
     return (
         <>
