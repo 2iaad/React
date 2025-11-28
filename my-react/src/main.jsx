@@ -19,7 +19,7 @@ function App()
 {
     const cards = data.map(element => { // For each element in Data, we create <Card/> component.
         return (
-            <Card
+            <Card // passing args to the function Card()
                 key={element.id} // keys is how react identify each element
                 img={element.img}
                 title={element.title}
