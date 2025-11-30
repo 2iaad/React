@@ -1,35 +1,49 @@
-import Data from './components/data'
-import Header from './components/Header'
-import Card from './components/Card'
+import { useState } from 'react'
 import './App.css'
 
-/*
-    Card() = “When you show ONE card, show it like this.”
-    Data.map() = “Create one <Card /> for every element in the Data array + pass the appriopriate props"
-*/
+export function App1() {
+  const [count, setCount] = useState(0);
 
-export default function App()
+  function handlePlusClick()
+  {
+    setCount(prev => prev + 1)
+    setCount(prev => prev + 1)
+  }
+  function handleMinusClick()
+  {
+    setCount(count - 1)
+  }
+
+  return (
+    <>
+      <button className='Button' onClick={handleMinusClick}>-</button>
+
+      <div id='number'>
+        <h1>{count}</h1>
+      </div>
+
+      <button className='Button' onClick={handlePlusClick}>+</button>
+    </>
+  )
+}
+
+export function App2() {
+  const [boolVar, setBoolVar] = useState(false)
+  function ShowHide()
+  {
+    setBoolVar(prev => !prev) // arrow function takes previous value and returns the opposite of it
+  }
+
+  return (
+    <>
+      <h1>Ziyad</h1>
+      <button className='Button' onClick={ShowHide}>{boolVar ? 'hide' : 'show'}</button>
+      {boolVar && <p>aqwad wahd 3rfo lkawkab</p>}
+    </>
+  )
+}
+
+export function App3()
 {
-    const cards = Data.map(element => { // For each element in Data, we create <Card/> component.
-        return (
-            <Card
-                key={element.id}
-                img={element.img}
-                title={element.title}
-                country={element.country}
-                googleMapsLink={element.googleMapsLink}
-                dates={element.dates}
-                text={element.text}
-            />
-        )
-    })
 
-    return (
-        <>
-            <Header/>
-            <div id="out-wrapper">
-                {cards}
-            </div>
-        </>
-    )
 }
