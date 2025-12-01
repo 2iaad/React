@@ -1,5 +1,5 @@
-export default function Recommendation(props) {
-    
+export default function ClaudeRecipe(props) {
+
     return (
         <>
             {props.isRecipe2 && <section>

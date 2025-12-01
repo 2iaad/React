@@ -1,5 +1,5 @@
-import Recommendation from './Recommendation'
-import ReqRecommendation from './ReqRecommendation'
+import ClaudeRecipe from './Main-ClaudeRecipe'
+import ReqRecommendation from './Main-ReqRecommendation'
 import { useState } from 'react'
 
 export default function Main() {
@@ -13,11 +13,14 @@ export default function Main() {
 
     function handleSubmit(formData) {
         const newIngredient = formData.get("ingredient")
+        if (newIngredient.length == 0) // this can be customized
+            return ;
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
 
     function handleRecipe() {
-        setIsRecipe(boolVar => !boolVar)
+        if (!isRecipe)
+            setIsRecipe(arg => !arg)
     }
 
     return (
@@ -33,7 +36,7 @@ export default function Main() {
             </form>
 
             <ReqRecommendation ingredients={ingredients} ingredientsListItems={ingredientsListItems} handleRecipe={handleRecipe} />
-            <Recommendation isRecipe2={isRecipe} />
+            <ClaudeRecipe isRecipe2={isRecipe} />
         </main>
     )
 }
