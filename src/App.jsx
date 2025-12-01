@@ -1,7 +1,7 @@
 import './index.css'
 
-import Header from "./Header"
-import Main from "./Main"
+import Header from "./App-Header"
+import Main from "./App-Main"
 
 export default function App() {
   return (
