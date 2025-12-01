@@ -14,15 +14,15 @@ header {
     align-items: center;
     gap: 11px;
     height: 80px;
-    background-color: white;
+    background-color: rgb(255, 209, 184);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
 
-header > img {
+header>img {
     width: 50px;
 }
 
-header > h1 {
+header>h1 {
     font-weight: 400;
 }
 
@@ -37,7 +37,7 @@ main {
     height: 38px;
 }
 
-.add-ingredient-form > input {
+.add-ingredient-form>input {
     border-radius: 6px;
     border: 1px solid #D1D5DB;
     padding: 9px 13px;
@@ -47,7 +47,7 @@ main {
     max-width: 400px;
 }
 
-.add-ingredient-form > button {
+.add-ingredient-form>button {
     font-family: Inter, sans-serif;
     border-radius: 6px;
     border: none;
@@ -58,7 +58,30 @@ main {
     font-weight: 500;
 }
 
-.add-ingredient-form > button::before {
+.add-ingredient-form>button::before {
     content: "+";
     margin-right: 5px;
+}
+
+.get-recipe-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: rgb(216, 214, 214);
+    margin: 40px 0px;
+    padding: 10px;
+}
+
+.get-recipe-container button {
+    padding: 10px;
+    color: white;
+    background-color: rgb(255, 96, 3);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ul#list li {
+    margin-left: 50px;
 }
