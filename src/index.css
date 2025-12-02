@@ -5,26 +5,44 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
-    background-color: #FAFAF8;
+    background-color: #fffefb;
 }
 
-header {
+.app-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 11px;
-    height: 80px;
-    background-color: rgb(193, 191, 191);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    background: #fff4e6;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #f0d2a5;
 }
 
-header>img {
-    width: 50px;
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-header>h1 {
-    font-weight: 400;
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
+
+.title-block h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #5a3e1b;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #7a5a3a;
+    font-weight: 500;
+}
+
 
 main {
     display: flex;
@@ -86,9 +104,10 @@ main {
 }
 
 .get-recipe-container button {
+    margin-left: 20px;
     padding: 10px;
     color: white;
-    background-color: rgb(255, 96, 3);
+    background-color: #5a3e1b;
     border: none;
     border-radius: 10px;
     cursor: pointer;
