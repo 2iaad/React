@@ -7,7 +7,7 @@ export default function ClaudeRecipe(props) {
 
     return (
         <>
-            <section>
+            <section id='ai-answer'>
                 {html}
             </section>
         </>
