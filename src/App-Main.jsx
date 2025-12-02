@@ -1,3 +1,4 @@
+import Intro from './Main-Intro'
 import Form from './Main-Form'
 import ReqRecommendation from './Main-ReqRecommendation'
 import ClaudeRecipe from './Main-ClaudeRecipe'
@@ -27,6 +28,7 @@ export default function Main() {
 
     return (
         <main>
+            <Intro />
             <Form handleSubmit={handleSubmit} />
             <ReqRecommendation ingredients={ingredients} handleRecipe={handleRecipe} />
             {Recipe && <ClaudeRecipe Recipe={Recipe} />}

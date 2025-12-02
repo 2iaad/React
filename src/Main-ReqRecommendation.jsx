@@ -7,7 +7,7 @@ export default function ReqRecommendation(props) {
         <section>
             {(props.ingredients).length > 0 ? // conditional rendering
                 <>
-                    <ul id='list'>
+                    <ul className='list'>
                         <h2>Ingredients on hand:</h2>
                         {ingredientsListItems}
                     </ul>
@@ -21,7 +21,7 @@ export default function ReqRecommendation(props) {
                     </div>}
                 </>
                 :
-                <ul><h2>List is empty!</h2></ul>}
+                <ul className ='list'><h2>List is empty!</h2></ul>}
         </section>
     )
 }

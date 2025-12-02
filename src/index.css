@@ -14,7 +14,7 @@ header {
     align-items: center;
     gap: 11px;
     height: 80px;
-    background-color: rgb(255, 209, 184);
+    background-color: rgb(193, 191, 191);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -27,14 +27,25 @@ header>h1 {
 }
 
 main {
-    padding: 30px 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+#app-introduction {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 90%;
 }
 
 .add-ingredient-form {
     display: flex;
     justify-content: center;
     gap: 12px;
-    height: 38px;
+    height: 50px;
+    width: 80%;
 }
 
 .add-ingredient-form>input {
@@ -56,6 +67,7 @@ main {
     width: 150px;
     font-size: 0.875rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .add-ingredient-form>button::before {
@@ -69,8 +81,8 @@ main {
     justify-content: space-evenly;
     border-radius: 10px;
     background-color: rgb(216, 214, 214);
-    margin: 40px 0px;
-    padding: 10px;
+    margin: 35px 0px;
+    padding: 10px 30px;
 }
 
 .get-recipe-container button {
@@ -82,6 +94,14 @@ main {
     cursor: pointer;
 }
 
-ul#list li {
-    margin-left: 50px;
+ul.list {
+    margin-top: 30px;
+    text-align: center;
+    list-style: none;
+}
+
+ul.list li {
+    text-align: center;
+    margin: 5px;
+    margin-right: 40px;
 }
