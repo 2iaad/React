@@ -73,138 +73,43 @@ Completely client-side (no backend)
 * Destructuring props
 * Async/await for API calls
 
-
-
-
-
-
-
-
-
-
-
-
 ---
 
-## 🚀 Features
+## 🔧 Setup
 
-### ✅ Add ingredients
-
-Users can type ingredients one by one. Ingredients are stored using React state.
-
-### ✅ AI-generated recipe
-
-The app sends the list of ingredients to Gemini (`fetch()` + API key from `.env`).
-It returns a structured recipe in Markdown.
-
-### ✅ Markdown rendering
-
-AI responses are rendered on screen using `react-markdown` + `remark-gfm` for better formatting.
-
-### ✅ Clean component structure
-
-The UI is split into small reusable components:
-
-* `App-Header.jsx`
-* `Main-Intro.jsx`
-* `Main-Form.jsx`
-* `Main-ReqRecommendation.jsx`
-* `Main-ClaudeRecipe.jsx`
-* `Ai.js` (API logic)
-
----
-
-## 🧠 What I Learned (React, JS, API, AI)
-
-### **🌱 React Concepts**
-
-* `useState()` — storing and updating state (ingredients list, recipe text)
-* Controlled vs uncontrolled inputs
-* Component props
-* Conditional rendering (`ingredients.length ? ... : ...`)
-* `.map()` to render lists
-* Splitting UI into reusable components
-* Importing images inside React
-* Passing event handlers as props
-* Basic CSS for component-scoped UI
-
-### **⚙️ API & AI Concepts**
-
-* How to call an API using `fetch()`
-* How to format a proper POST request (method, headers, body)
-* Using `.env` to hide the API key (`VITE_API_KEY`)
-* Accessing environment variables in Vite:
-
-  ```js
-  import.meta.env.VITE_API_KEY
-  ```
-* Structuring AI prompts (system prompt + user ingredients)
-* Understanding AI responses and extracting the text:
-
-  ```js
-  data.candidates[0].content.parts[0].text
-  ```
-
-
-
----
-
-
-
-## 🔑 Environment Variables Setup
-
-Create a file:
-
-```
-.env
-```
-
-Inside:
-
-```
-VITE_API_KEY=your_api_key_here
-VITE_AI_PROMPT=Your system prompt here...
-```
-
-Vite exposes variables through:
-
-```js
-import.meta.env.VITE_API_KEY
-```
-
----
-
-## 🧪 Running the Project
+### 1. Install dependencies
 
 ```bash
 npm install
+```
+
+### 2. Create `.env` file
+
+```
+VITE_API_KEY=your_gemini_key_here
+VITE_AI_PROMPT=your_system_prompt_here
+```
+
+### 3. Run the app
+
+```bash
 npm run dev
 ```
 
 ---
 
-## 🛠 Future Improvements
+## 🍽️ Example Ingredients
 
-* Save ingredient list to localStorage
-* Add loading states
-* Add ability to regenerate recipe
-* Add multiple recipes option
-* Add voice input for ingredients
+You can test the app with:
+
+```
+tomatoes, potatoes, salt, garlic, milk
+```
 
 ---
 
-## 💬 About This Project
+## 📄 License
 
-This project was built to practice and combine:
-
-* React + components
-* Props + state
-* Mapping + conditional rendering
-* API authentication with `.env`
-* Working with Google Gemini API
-* Parsing AI responses
-* Rendering Markdown inside React
-
-A perfect real-world exercise to practice modern web development with AI.
+Free to use for learning and personal projects.
 
 ---
