@@ -1,5 +1,8 @@
 export default function ClaudeRecipe(props) {
 
+    const API_KEY = import.meta.env.VITE_API_KEY;
+
+    console.log(API_KEY);
     return (
         <>
             {props.isRecipe2 && <section>

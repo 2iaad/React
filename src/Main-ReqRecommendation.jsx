@@ -1,12 +1,15 @@
 export default function ReqRecommendation(props) {
 
+    const ingredientsListItems = props.ingredients.map(ingredient => (
+        <li key={ingredient}>{ingredient}</li>
+    ))
     return (
         <section>
             {(props.ingredients).length > 0 ? // conditional rendering
                 <>
                     <ul id='list'>
                         <h2>Ingredients on hand:</h2>
-                        {props.ingredientsListItems}
+                        {ingredientsListItems}
                     </ul>
 
                     {(props.ingredients).length > 2 &&  <div className='get-recipe-container'>
