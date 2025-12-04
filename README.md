@@ -1,119 +1,18 @@
-# What is React?
+# React + Vite
 
-**React is a JavaScript library that supports composability, which means you can create small, reusable pieces of code called components and combine them to build large, scalable, and maintainable web applications.**
-- Each component can manage its own state and UI logic.
-- Components can be nested, meaning small components can be combined into bigger ones.
-- This approach makes your code modular, reusable, and easier to maintain.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# What is a Component?
+Currently, two official plugins are available:
 
-A component is simply:
-➡️ A function that returns a React elements (HTML-like code).
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-➡️ It represents one part of your UI.
+## React Compiler
 
-Examples of components: A button, A navigation bar.
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-➡️ React components must start with a capital letter.
-# What is State?
+Note: This will impact Vite dev & build performances.
 
-➡️ Its what makes components alive, React components can have state, which is data that can change.
-When state changes 
+## Expanding the ESLint configuration
 
-➡️ React re-renders the component without refreshing the intire webpage.
-
-# What do we mean by *composable*?
-
-In React, “composable” basically means something can be built by combining smaller pieces (components) together.
-
--   You can build large apps from small, testable, and reusable components.
-
--   Makes your code cleaner, easier to maintain, and scalable.
-
----
-
-# Difference between vanilla JS and React
-
--> *vanilla JS (imperative)* -> you explicitly instruct how to find the element, what to change, and how.
-```
-const root = document.getElementById("root");
-
-const element = document.createElement("h1");
-element.innerText = "Created using Vanilla JS";
-element.className = "header";
-
-root.appendChild(element);
-```
-
--> *React (Declarative)* -> You tell the computer what you want, and it figures out how to do it.
-```
-import { createRoot } from "react-dom/client";
-
-createRoot(document.getElementById("root")).render(
-  <h1 className="header">Created using React</h1>
-);
-```
-
-➡️ Vanilla JS: You manually create and update DOM elements.
-
-➡️ React: You describe the UI with JSX, and React updates the DOM for you.
-
----
-# Creating a React app using Vite (step-by-step)
-```npm create vite@latest my-react --template react```
-
--> `npm`:                 node package manager - it runs commands and installs packages.
-
--> `create`:              create project.
-
--> `vite@latest`:         use Vite project generator +  use the latest version.
-
--> `my-react`:            name of the project folder that Vite will create.
-
--> `--template react`:    Vite supports many frameworks: vanilla JS, Vue, React, Svelte, Lit, Preact. this flag tells Vite to create a project using the React template.
-
-
-
-# When we create a Vite + React project, the directory structure looks like this:
-
-```
-my-react/          ← your project root
-├─ node_modules/   ← installed dependencies
-├─ public/         ← static assets like favicon, vite.svg
-├─ src/            ← your source code (React components live here)
-│    ├─ assets/    ← images, logos, etc.
-│    ├─ App.jsx    ← main App component
-│    ├─ main.jsx   ← entry point (renders App)
-│    ├─ App.css    ← CSS for App
-├─ index.html      ← HTML template
-├─ package.json
-└─ vite.config.js  ← Vite config file
-```
-# Difference between live server & Vite server:
-
-```
-| Feature                      | Live Server | Vite Dev Server |
-| ------------------------------------------------------------ |
-| Serves static files           | ✅          | ✅               |
-| JSX transpilation            | ❌          | ✅               | => convert code to JavaScript that browsers understand.
-| npm package imports          | ❌          | ✅               |
-| Hot Module Replacement (HMR) | ❌          | ✅               | => Updates only the changed components not the intire page.
-----------------------------------------------------------------
-```
-
-# Difference between a Library and a Framework
-
-Library is just a collection of predefined functions, tools, or modules that you can call without recoding them, React is technically a library, because you import and use the pieces you need from the library.
-
-
-Framework is like a predefined skeleton for an application (Template / Structure), It tells  where to put folders, files, routing, components, etc.
-Example:
-```
-    pages/
-        |__ index.jsx
-        |__ about.jsx
-    components/
-        |__ Header.jsx
-        |__ Footer.jsx
-```
--> You fill in the “logic and content” inside the structure/framework & theframework calls your code at the right time.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
