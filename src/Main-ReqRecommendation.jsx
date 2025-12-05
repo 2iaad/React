@@ -13,7 +13,7 @@ export default function ReqRecommendation(props) {
                     </ul>
 
                     {(props.ingredients).length > 2 &&  <div className='get-recipe-container'>
-                        <div className='get-recipe-inner-container'>
+                        <div ref={props.ref} className='get-recipe-inner-container'>
                             <h3>Ready for a recipe?</h3>
                             <p>Generate a recipe from your list of ingredients.</p>
                         </div>
