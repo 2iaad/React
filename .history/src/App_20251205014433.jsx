@@ -1,46 +1,5 @@
 import { useState, useEffect } from "react";
 
-export default function App() {
-
-  const [count, setCount] = useState(1);
-  const [data, setData] = useState({});
-  
-  function handleClick() {
-
-    setCount(count => count + 1)
-  }
-  
-  useEffect(() => {
-
-    console.log("Code executed!")
-
-    const response = fetch("https://swapi.dev/api/people/1")
-    const responseJSON = response.json();
-    
-    setData(data => responseJSON)
-  }, [count])
-  
-  return (
-    <>
-      <p>The count is: {count}</p>
-      <button onClick={handleClick}>Get new character!</button>
-      <br/>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-    </>
-  )
-}
-
-
-
-
-
-
-
-
-
-
-
-
 // export default function App() {
 
 //   const [isOnline, setIsOnline] = useState(navigator.onLine); // navigator.onLine (built-in browser value).

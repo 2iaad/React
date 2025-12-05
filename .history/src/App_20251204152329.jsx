@@ -1,0 +1,20 @@
+import { useState, useRef, useEffect } from 'react';
+import './App.css'
+
+export default function App() {
+
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  function fun()
+  {
+    
+  }
+  
+  return (
+    <>
+      <button onClick={setIsPlaying(!isPlaying)}>here</button>
+      <h1>HERE</h1>
+      <p>{isPlaying}</p>
+    </>
+  );
+}

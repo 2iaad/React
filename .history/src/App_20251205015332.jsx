@@ -15,7 +15,7 @@ export default function App() {
     console.log("Code executed!")
 
     const response = fetch("https://swapi.dev/api/people/1")
-    const responseJSON = response.json();
+    const responseJSON = response.JSON;
     
     setData(data => responseJSON)
   }, [count])
@@ -25,7 +25,7 @@ export default function App() {
       <p>The count is: {count}</p>
       <button onClick={handleClick}>Get new character!</button>
       <br/>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <pre></pre>
     </>
   )
 }
