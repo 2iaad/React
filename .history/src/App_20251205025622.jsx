@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
+
+
+import React from "react"
 import WindowTracker from "./WindowTracker"
 
 export default function App() {
 
-    const [show, setShow] = useState(true)
+    const [show, setShow] = React.useState(true)
     
     function toggle() {
         setShow(prevShow => !prevShow)

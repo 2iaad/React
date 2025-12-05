@@ -1,25 +1,4 @@
 import { useState, useEffect } from "react";
-import WindowTracker from "./WindowTracker"
-
-export default function App() {
-
-    const [show, setShow] = useState(true)
-    
-    function toggle() {
-        setShow(prevShow => !prevShow)
-    }
-
-    return (
-        <main className="container">
-            <button onClick={toggle}>
-                Toggle WindowTracker
-            </button>
-            {show && <WindowTracker />}
-        </main>
-    )
-}
-
-/* ################################################
 
 export default function App() {
 
@@ -35,10 +14,10 @@ export default function App() {
 
     console.log("Code executed!")
 
-    fetch(`https://swapi.dev/api/people/${count}`)
-      .then(res => res.json())
-      .then(data => setData(data))
-
+    const response = fetch("https://swapi.dev/api/people/1")
+    const responseJSON = response.json();
+    
+    setData(data => { data = responseJSON})
   }, [count])
   
   return (
@@ -50,7 +29,7 @@ export default function App() {
     </>
   )
 }
-*/
+
 
 
 
