@@ -4,9 +4,65 @@ header {
   gap: 20px;
   
   text-align: center;
-  border: 3px solid black;
 }
 
 main {
-  border: 3px solid green;
+  display: flex;
+  flex-direction: column;
+}
+
+main div#numbers {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4.5rem;
+  padding: 20px;
+}
+
+.number-div {
+  text-align: center;
+  background: #ededed;
+  padding: 20px;
+  border-radius: 14px;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.number-div:hover {
+  background: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(235, 235, 235, 0.43);
+}
+
+#button {
+  margin-top: 30px;
+
+  align-self: center;
+  padding: 16px 28px;
+
+  background-color: rgb(49, 96, 140);
+
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#button:hover {
+  background-color: rgb(43, 67, 88);
+
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+#button:active {
+  transform: translateY(0px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }

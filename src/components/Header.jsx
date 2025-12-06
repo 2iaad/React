@@ -1,7 +1,7 @@
 export default function Header()
 {
     const headerName = "Tenzies"
-    const intro = "Roll untill all dice are the same. Click each die to freeze it at its current value between rolls."
+    const intro = "Roll untill all dice are the same. Click each dice to freeze it at its current value between rolls."
     
     return (
         <header>
