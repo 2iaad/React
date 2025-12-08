@@ -29,16 +29,24 @@ export default function Main() {
 
     function    toggleFreeze(id)
     {
-        console.log(id);
+        setNumbers(numbers =>
+                numbers.map(die =>
+                    id === die.id ? { ...die, isFrozen: !die.isFrozen } : die
+                    /*
+                        "...die":  Copy all properties of die → { id: 3, value: 7, isFrozen: false }
+                        "isFrozen: !die.isFrozen": Overwrite the isFrozen property
+                    */
+        ))
     }
 
     const numbersRender = numbers.map(element => {
         return (
             <Number
+                id={element.id}
                 key={element.id}
                 value={element.value}
                 isFrozen={element.isFrozen}
-                freeze={toggleFreeze(element.id)}
+                toggleFreeze={toggleFreeze}
             />
         )
     })
