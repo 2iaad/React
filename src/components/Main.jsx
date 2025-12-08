@@ -5,16 +5,16 @@ import Number from './Number'
 export default function Main() {
     
     const [numbers, setNumbers] = useState(
-    [{  id: 1,  value: Math.floor(Math.random() * 10)  },
-        {   id: 2,  isHeld: false,   value: Math.floor(Math.random() * 10)  },
-        {   id: 3,  isHeld: false,   value: Math.floor(Math.random() * 10)  },
-        {   id: 4,  isHeld: false,   value: Math.floor(Math.random() * 10)  },
-        {   id: 5,  isHeld: false,   value: Math.floor(Math.random() * 10)  },
-        {   id: 6,  isHeld: false,   value: Math.floor(Math.random() * 10)  },
-        {   id: 7,  isHeld: false,   value: Math.floor(Math.random() * 10)  },
-        {   id: 8,  isHeld: false,   value: Math.floor(Math.random() * 10)  },
-        {   id: 9,  isHeld: false,   value: Math.floor(Math.random() * 10)  },
-        {   id: 10, isHeld: false,   value: Math.floor(Math.random() * 10)  }]
+    [   {  id: 1,   isFrozen: false,   value: Math.floor(Math.random() * 10)  },
+        {   id: 2,  isFrozen: false,   value: Math.floor(Math.random() * 10)  },
+        {   id: 3,  isFrozen: false,   value: Math.floor(Math.random() * 10)  },
+        {   id: 4,  isFrozen: false,   value: Math.floor(Math.random() * 10)  },
+        {   id: 5,  isFrozen: false,   value: Math.floor(Math.random() * 10)  },
+        {   id: 6,  isFrozen: false,   value: Math.floor(Math.random() * 10)  },
+        {   id: 7,  isFrozen: false,   value: Math.floor(Math.random() * 10)  },
+        {   id: 8,  isFrozen: false,   value: Math.floor(Math.random() * 10)  },
+        {   id: 9,  isFrozen: false,   value: Math.floor(Math.random() * 10)  },
+        {   id: 10, isFrozen: false,   value: Math.floor(Math.random() * 10)  }]
     );
     
 /*
@@ -26,11 +26,19 @@ export default function Main() {
         }))
     );
 */
+
+    function    toggleFreeze(id)
+    {
+        console.log(id);
+    }
+
     const numbersRender = numbers.map(element => {
         return (
             <Number
                 key={element.id}
                 value={element.value}
+                isFrozen={element.isFrozen}
+                freeze={toggleFreeze(element.id)}
             />
         )
     })
@@ -40,7 +48,7 @@ export default function Main() {
         setNumbers(
         numbers.map((n) => ({
             ...n,
-            value: Math.floor(Math.random() * 10),
+            value: Math.floor(Math.random() * 10)
         }))
         );
     }
