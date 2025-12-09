@@ -1,7 +1,7 @@
 export default function Number(props)
 {
     const styles = {
-        backgroundColor: props.isFrozen ? "grey" : "white"
+        backgroundColor: props.isFrozen ? "#21578c" : "#3779bb"
     }
     
     return (

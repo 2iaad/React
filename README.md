@@ -1,18 +1,44 @@
-# React + Vite
+# Tenzies Game 🎲
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Tenzies game built with **React**. Roll the dice, try to get all dice to show the same number, and freeze dice as needed. Fun and interactive for practicing React state, hooks, and components.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
 
-## React Compiler
+![Tenzies Game Screenshot](./public/Screenshot%202025-12-09%20at%2001.10.32.png)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## Features
 
-## Expanding the ESLint configuration
+- Roll 10 dice at once
+- Freeze individual dice by clicking on them
+- Roll only unfrozen dice
+- Detect when all dice show the same number (win condition)
+- Confetti celebration using `react-confetti`
+- Responsive and modern UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+- React
+- useState
+- CSS Grid & Flexbox for layout
+- Vite as the development server and bundler
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/2iaad/tenzies.git
+cd tenzies
+npm install
+npm run dev
+```
+
+Open your browser and go to http://localhost:5173 (Vite default)
